@@ -81,6 +81,7 @@ Train/Validate/Test model:
 ```
 python main.py --embedding_file=/path/to/embeddings --data=/path/to/data
 ```
+after run `python data_process.py`, the processed data will be in `./data`.
 
 Start Restful API
 ```
