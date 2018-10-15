@@ -67,20 +67,22 @@ Sample output:
         0
     ]
 ]
+```
 Notice: each item in the result list is the rank of candidates in their index
 
 # Run
 Preprocess:
-
-`python data_process.py`
+```
+python data_process.py
+```
 
 Train/Validate/Test model:
 
-`python main.py --embedding_file=/path/to/embeddings --data=/path/to/data`
+```
+python main.py --embedding_file=/path/to/embeddings --data=/path/to/data
+```
 
 Start Restful API
-
-`python start_api.py` 
-
-
-# WikiQA-LSTM-Keras
+```
+python start_api.py
+```
