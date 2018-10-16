@@ -71,20 +71,25 @@ Sample output:
 Notice: each item in the result list is the rank of candidates in their index
 
 # Run
-Preprocess:
+
+## Train model:
+1. Preprocess:
 ```
 python data_process.py
 ```
 
-Train/Validate/Test model:
+2. Train
 
 ```
-python main.py --embedding_file=/path/to/embeddings --data=/path/to/data
+python main.py --embedding_file=/path/to/embeddings --data="data"
 ```
-after run `python data_process.py`, the processed data will be in `./data`.
+after run `python data_process.py`, the processed data will be in `./data`. The embedding file you can download from [here](http://nlp.stanford.edu/data/glove.6B.zip) and you can use `glove.6B.50d.txt` or others.
 
-Start Restful API
+## Start Restful API
 To start this Restful API, trained model and vocabulary is needed. To generate them, you can run the previous command. Also, this project contains a trained model and vocabulary, directly run this command is also OK.
 ```
 python start_api.py
 ```
+
+## Using Anaconda3
+After `conda install --yes --file requirements.txt`, there may packages can not be installed. You can install them manually.
