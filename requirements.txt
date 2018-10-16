@@ -1,0 +1,8 @@
+numpy==1.15.2
+Flask==1.0.2
+h5py==2.8.0
+tensorflow_gpu==1.7.0
+Keras==2.2.4
+nltk==3.2.5
+scikit_learn==0.20.0
+tensorflow==1.11.0

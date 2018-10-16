@@ -84,6 +84,7 @@ python main.py --embedding_file=/path/to/embeddings --data=/path/to/data
 after run `python data_process.py`, the processed data will be in `./data`.
 
 Start Restful API
+To start this Restful API, trained model and vocabulary is needed. To generate them, you can run the previous command. Also, this project contains a trained model and vocabulary, directly run this command is also OK.
 ```
 python start_api.py
 ```
