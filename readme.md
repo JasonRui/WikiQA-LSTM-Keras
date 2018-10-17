@@ -92,4 +92,4 @@ python start_api.py
 ```
 
 ## Using Anaconda3
-After `conda install --yes --file requirements.txt`, there may packages can not be installed. You can install them manually.
+After `conda install --yes -c conda-forge --file requirements.txt`, there may packages can not be installed. You can install them manually.
