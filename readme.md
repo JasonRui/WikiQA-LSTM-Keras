@@ -93,3 +93,11 @@ python start_api.py
 
 ## Using Anaconda3
 After `conda install --yes -c conda-forge --file requirements.txt`, there may packages can not be installed. You can install them manually.
+
+I use NLTK to process sentences, you also need to download 3 corpora. To do that, you need to enter `python`, then
+```
+import nltk
+nltk.download('stopwords')
+nltk.download('punkt')
+nltk.download('wordnet')
+```
