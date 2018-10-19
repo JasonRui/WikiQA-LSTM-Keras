@@ -93,3 +93,45 @@ python start_api.py
 
 ## Using Anaconda3
 After `conda install --yes -c conda-forge --file requirements.txt`, there may packages can not be installed. You can install them manually.
+
+# Test
+You can test Restful API by `curl` command
+```
+curl -X POST \
+
+  http://localhost:5000/predict \
+
+  -H 'Content-Type: application/json' \
+
+  -d '{
+
+    "questions": ["first question?", "second question"],
+
+    "answers": ["first answer", "second answer"]
+
+}'
+```
+```
+curl -X POST \
+
+  http://localhost:5000/rank \
+
+  -H 'Content-Type: application/json' \
+
+  -d '{
+
+    "questions": ["first question?", "second question"],
+
+    "answers":
+
+     [
+
+        ["candidate 1 for first answer", "candidate 2 for first answer"],
+
+        ["candidate 2 for first answer"]
+
+     ]
+
+
+}'
+```
